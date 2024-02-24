@@ -1,0 +1,272 @@
+
+.left ul img{
+    width: 100px;
+    height: 20px;
+    filter: invert();
+}
+.left ul li{
+    list-style: none;
+    position: relative;
+    right: 70px;
+    width: 20px;
+    height: 1px;
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.left{
+    margin: 20px;
+    padding: 10px;
+    background-color: #242424;
+    color: white;
+    width: 25vw;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+.right{
+    position: absolute;
+    background-color:#242424;
+    width: 70vw;
+    left: 30vw;
+    top:20px;
+    bottom: 30px;
+    height: 97vh;
+    overflow: auto;
+}
+.box{
+    position: fixed;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    width: 25vw;
+    background-color: black;
+    height: 55vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box img{
+    width: 42px;
+    height: 20px;
+}
+.library{
+    color: white;
+    background-color: #242424;
+    margin: 0px;
+    padding: 8px;
+    width:25vw;
+    height: 70vh;
+    position: relative;
+    left: 20px;
+}
+.library img{
+    width: 42px;
+    height: 20px;
+}
+.links{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    font-size: small;
+}
+.links a{
+    color: gray;
+    padding: 4px;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px;
+    padding: 10px;
+}
+.buttons button{
+    position: relative;
+    bottom: 20px;
+    margin: 8px;
+     padding: 20px;
+     border-radius: 40px;
+     width: 100px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: bolder;
+}
+.buttons li{
+    list-style: none;
+}
+.header{
+    margin: 7px;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+}
+.head{
+    background-color: rgb(31, 29, 29);
+    height: 90px;
+}
+.playlist{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 2px;
+    padding: 10px;
+}
+.cardcontainer{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 70vh;
+    
+}
+.card{
+    background-color: #252525;
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.play {
+    padding: 10px;
+}
+.signup{
+    background-color: #252525;
+    color: grey;
+    border: none;
+}
+.signup:hover{
+    color: white;
+    font-size:1rem;
+}
+.login:hover{
+    font-size: large;
+}
+.playbar{
+    position: fixed;
+    bottom: 0;
+    padding: 12px;
+    width: 65vw;
+    background-color: green;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 40px;
+}
+.songlist{
+    overflow: scroll;
+    height: 400px;
+}
+.songlist ul{
+    list-style: none;
+    position: relative;
+    right: 30px;
+}
+.songlist ul li{
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: flex;
+    width: 300px;
+    gap: 14px;
+    padding: 12px;
+    margin: 4px;
+}
+.songlist img{
+    width: 30px;
+    height: 50px;
+    filter: invert();
+}
+.playnow{
+    display: flex;
+    width: 100px;
+    padding: 14px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.playnow img{
+    width: 30px;
+    height: 30px;
+}
+.seekbar{
+    opacity: 0.7;
+    background-color: white;
+    height: 10px;
+    width: 65vw;
+    border-radius:10px;
+    cursor: pointer;
+}
+.circle{
+    background-color:white;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    position:absolute;
+    bottom: 35px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.hamburger{
+    display: none;
+}
+.song img{
+    cursor: pointer;
+}
+.songinfo{
+    color: white;
+}
+.card:hover{
+   background-color: black;
+}
+.close{
+   display: none;
+}
+@media (max-width:1400px){
+    .left{
+        position: absolute;
+        left: -100%;
+        transition:all .3s;
+        z-index: 1;
+        width: 233px;
+        height: 100vh;
+    }
+    .library{
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        width: 233px;
+        height: 100vh;
+        background-color: black;
+    }
+    .right{
+        width: 100vw;
+        position: relative;
+        left: 0px;
+    }
+    .right button{
+        bottom: 100px;
+    }
+    .playbar{
+        width: 85vw;
+        position: relative;
+        bottom: 150px;
+    }
+    .seekbar{
+        width: 85vw;
+    }
+    .hamburger{
+        display: block;
+        filter: invert();
+        position: relative;
+        left: 20px;
+        padding: 12px;
+    }
+    .close{
+        filter: invert();
+    }
+    .songinfo{
+        word-break: break-all;
+    }
+}

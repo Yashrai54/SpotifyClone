@@ -1,0 +1,27 @@
+/* Specify the scrollbar style for webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; /* Dark color for the thumb */
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #666; /* Dark color for the track */
+  }
+  
+  /* Specify the scrollbar style for Firefox */
+  /* Note: Firefox does not support styling the track separately as of my last knowledge update in January 2022 */
+  /* You might not get the exact same appearance in Firefox */
+  /* If Firefox has introduced new features or changes since then, please check the latest documentation */
+  
+  /* Specify the scrollbar style for Microsoft Edge and Internet Explorer */
+  /* Note: This may not be supported in future versions, as Microsoft is moving towards the Blink rendering engine used by Chrome and others */
+  /* Please check the latest documentation for Microsoft Edge */
+  
+  /* Specify the scrollbar style for other browsers */
+  /* As of my last update, many other browsers do not support scrollbar customization */
+  /* The appearance may default to the browser's default scrollbar style */
+  
